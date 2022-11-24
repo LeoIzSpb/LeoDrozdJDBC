@@ -17,7 +17,6 @@ public class UserServiceImpl implements UserService {
 
     public void saveUser(String name, String lastName, byte age) {
         userDaoJDBC.saveUser(name,lastName,age);
-        System.out.println("User " + name + " has add!");
     }
 
     public void removeUserById(long id) {
